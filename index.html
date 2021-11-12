@@ -17,12 +17,7 @@
     <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
     <script src="liff-starter.js"></script>
     <script>
-        window.onload = () => {
-            var url = new URL(location.href);
-            if (!url.searchParams.has("liff.state") && !url.searchParams.has("type"))
-                setTimeout(() => {
-                    location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-                }, 500);
-        }
+        var url = new URL(location.href);
+        if (!url.searchParams.has("liff.state") && !url.searchParams.has("type")) setTimeout(() => location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ", 500);
     </script>
 </body>
